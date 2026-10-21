@@ -12,9 +12,9 @@ int main() {
     }
 
     // Open the output file
-    std::ofstream outputFile("output.txt");
+    std::ofstream outputFile("sums.txt");
     if (!outputFile) {
-        std::cerr << "Error: Could not create or open 'output.txt'" << std::endl;
+        std::cerr << "Error: Could not create or open 'sums.txt'" << std::endl;
         inputFile.close();
         return 1;
     }
@@ -39,7 +39,7 @@ int main() {
     inputFile.close();
     outputFile.close();
 
-    std::cout << "Successfully processed " << lineCount << " lines. Results saved to 'output.txt'." << std::endl;
+    std::cout << "Successfully processed " << lineCount << " lines. Results saved to 'sums.txt'." << std::endl;
 
     return 0;
 }
